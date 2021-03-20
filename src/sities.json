@@ -1,0 +1,8 @@
+{
+    "sities": {
+        "armalit": "url(/assets/armalit/01.png)",
+        "askold": "url(/assets/askold/01.png)",
+        "burevestnik": "url(/assets/burevestnik/01.png)",
+        "skbk": "url(/assets/skbk/01.png)"
+    }
+}
