@@ -7,41 +7,66 @@
     left: 50%;
     transform: translateX(-50%);
     position: fixed;
-    .armalit, .askold, .burevestnik, .skbk{
-        visibility: hidden; 
-        .block{
+    @keyframes show-up {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes anim-point {
+        from {
+            box-shadow: 1px rgba(0, 0, 0, 0.3);
+        }
+        to {
+            box-shadow: inset -2px -2px 5px 0 rgba(0, 0, 0, 0.3);
+            transform: scale(1.3);
+        }
+    }
+    .armalit,
+    .askold,
+    .burevestnik,
+    .skbk {
+        visibility: hidden;
+        .block {
             border-radius: 15px;
-            box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
-        .img{
-            height: 88px;
-            width: 88px;
-            background-size: 100%;
-            border: 5px solid white;
-            border-radius: 15px 15px 0 0;
-        }
-        .sity{
-            background: white;
-            text-align: center;
-            padding: 5px;
-            border-radius: 0 0 15px 15px;
-        }
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+            .img {
+                height: 88px;
+                width: 88px;
+                background-size: 100%;
+                border: 5px solid white;
+                border-radius: 15px 15px 0 0;
+            }
+            .sity {
+                background: white;
+                text-align: center;
+                padding: 5px;
+                border-radius: 0 0 15px 15px;
+            }
         }
         .punct {
-            box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            cursor: pointer;
             width: 10px;
             height: 10px;
             background: yellow;
             border-radius: 50%;
             visibility: visible;
-        }&:hover{
-            cursor: pointer;
+            border: 0;
+            outline: none;
+            animation: anim-point 5s forwards;
+        }
+        &:hover .block {
             visibility: visible;
-            
+            transition: all 0.4s ease;
+            transform: translateY(-10px) scale(1.1);
+            animation: 1s show-up;
         }
     }
     .armalit {
         position: fixed;
-        left: 150px;
+        left: 450px;
         top: 260px;
     }
     .askold {
@@ -58,6 +83,5 @@
         position: fixed;
         left: 120px;
         top: 130px;
-
     }
 }
