@@ -1,8 +1,14 @@
 {
     "sities": {
-        "armalit": "url(/assets/armalit/01.png)",
-        "askold": "url(/assets/askold/01.png)",
-        "burevestnik": "url(/assets/burevestnik/01.png)",
-        "skbk": "url(/assets/skbk/01.png)"
+        "armalit": {
+            "img_01": "url(/assets/sities/armalit/01.png)",
+            "img_02": "url(/assets/sities/armalit/02.png)",
+            "img_03": "url(/assets/sities/armalit/03.png)",
+            "img_04": "url(/assets/sities/armalit/04.png)",
+            "img_05": "url(/assets/sities/armalit/05.png)"
+        },
+        "askold": "url(/assets/sities/askold/01.png)",
+        "burevestnik": "url(/assets/sities/burevestnik/01.png)",
+        "skbk": "url(/assets/sities/skbk/01.png)"
     }
 }
